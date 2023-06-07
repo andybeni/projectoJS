@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .menu-item {
+    margin-bottom: 20px;
+  }
+  
+  .menu-item select {
+    background-color: #fff;
+  }
+  
+  .item-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .item-container p {
+    margin: 0;
+  }
+  
+  .item-container button {
+    margin-top: 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .item-container button:hover {
+    background-color: #286090;
+  }
+  
+  .item {
+    margin-bottom: 10px;
+  }
+  
+  .item span {
+    display: inline-block;
+    width: 200px;
+  }
+  
+  .item .product {
+    font-weight: bold;
+  }
+  
+  .item .cost {
+    color: #666;
+  }
+  .continuar{
+    background-color: rgb(98, 204, 233);
+    border-radius: 3px;
+    padding: 5px;
+  }
+
+.disable{
+  display: none;
+}
+.boton{
+  margin-top: 10px;
+  margin-left: 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.continuar{
+  margin-top: 25px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+#menuFormulario{
+  margin-top: 50px;
+}
+
+.product-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}

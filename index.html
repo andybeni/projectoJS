@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cafetería</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Ingresa tus datos</h2>
+        <form id ="datos" class="forma__datos">
+            <label for="nombre">Nombre:</label>
+            <input class = "inputDatos" type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input class = "inputDatos" type="text" id="apellido" name="apellido" required>
+            
+            <label for="numero">Número de Alumno:</label>
+            <input class = "inputDatos"type="text" id="numero" name="numero" required> 
+            <button class= "boton buttonDisable"  id="btnAceptar" type="submit">Aceptar</button>
+            <button class= "boton btnBorrar" id="btnReiniciar">Borrar</button>
+        </form>
+        <section class = "continuar disable">
+            <div>
+                <p>¿Deseas continuar?</p>
+                <button class= "boton" id="btnSi">Si, Ingresar al Menú</button>
+                <button class= "boton" id="btnNo">No,Volver a ingresar mis datos</button>
+            </div>
+        </section>
+        <section class="formulario__menu disable" id="menuFormulario">
+        <form>
+            <h2>Selecciona tus productos</h2>
+          <div class="menu-item">
+            <label for="sandwich">Sandwiches:</label>
+            <select id="sandwich" name="sandwich">
+              <option value=""disabled selected>Seleccione una opción</option>
+              
+            </select>
+          </div>
+          
+          <div class="menu-item">
+            <label for="torta">Tortas:</label>
+            <select id="torta" name="torta">
+              <option value=""disabled selected>Seleccione una opción</option>
+            </select>
+          </div>
+          
+          <div class="menu-item">
+            <label for="bebida">Bebidas:</label>
+            <select id="bebida" name="bebida">
+              <option value=""disabled selected>Seleccione una opción</option>
+            </select>
+          </div>
+          
+          <div class="menu-item">
+            <label for="dulce">Dulces:</label>
+            <select id="dulce" name="dulce">
+              <option value=""disabled selected>Seleccione una opción</option>
+            </select>
+          </div>
+          <button class= "boton" id="btnSalir">Salir</button>
+        </form>
+    </section>
+    <div class="item-container">
+      <h2>Agregar a tu carrito</h2>
+      <div id="carrito">
+        <div class="product-container"> 
+          <div id="mostrarSeleccion" class="product-grid">
+          </div> 
+        </div>
+        <div class="product-buttons">
+          <button class="product-button add-button">Agregar</button>
+          <button class="product-button remove-button">Quitar</button>
+        </div>
+      </div>
+      <div id="tarjetas"></div> <!-- Contenedor para las tarjetas -->
+    </div>    
+      <script src="./javascript.js"></script>
+</body>
+</html>
